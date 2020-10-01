@@ -1,0 +1,76 @@
+<!-- <div class="container mt-5">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="display-4" style="text-align: center;"> {{question}}</h1>
+                <table>
+                    <tr><th>Results :-</th></tr>
+                <div *ngFor="let choice of choices" class="lead mt-2">
+
+                    <tr><td>{{choice.choice_text}}</td>
+                        <div class="form-control"><td>{{choice.count}}</td> </div>
+                        </tr>
+            
+                </div>
+                </table>
+                <div class="lead">
+                    <button class="btn btn-info btn-lg" (click)="viewresult()" >View Surveys!</button>
+                </div>
+            
+           
+            </div>
+        </div>
+        
+            
+
+            
+        </div>
+    </div>
+
+<br><br>
+ -->
+
+
+ <div class="container mt-5">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="display-4" style="text-align: center;"> {{question}}</h1>
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                    <tr>
+                    <th>Choice:</th>
+                    <th>Count:</th>
+                    </tr>
+                    </thead>
+                    
+                
+
+                    <tr *ngFor="let choice of choices">
+                    <td>{{choice.choice_text}}</td>
+                        <td>{{choice.count}}</td>
+                        
+                        </tr>
+            
+                
+                </table>
+                <!-- <div class="lead">
+                    <button class="btn btn-info btn-lg" (click)="viewresult()" >View Surveys!</button>
+                </div> -->
+            
+           
+            </div>
+        </div><br>
+
+        <canvas id="myChart" width="500px" height="400"></canvas><br>
+        <!-- <canvas id="myChart1" width="500px" height="400"></canvas> -->
+        
+            
+
+            
+        </div>
+    </div>
+
+<br><br>
+
+

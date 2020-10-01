@@ -1,0 +1,70 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" style="color:white">Survey Portal</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/" style="color:white"> <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:white">| About <span class="sr-only">(current)</span></a>
+        
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:white">| <i class="fa fa-address-book" aria-hidden="true"></i> Contact Us <span class="sr-only">(current)</span></a>
+        
+      </li>
+      
+      
+      
+    </ul>
+    
+  </div>
+</nav> -->
+
+
+
+<header class="header">
+  <nav class="navbar navbar-expand-lg py-3">
+      <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><i class="fa fa-star-half-o" aria-hidden="true"></i> Survey Portal</a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+          
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active"><a href="/" class="nav-link text-uppercase font-weight-bold"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">| About </a></li>
+                  <li class="nav-item"><a routerLink="/result" class="nav-link text-uppercase font-weight-bold">| Results </a></li>
+                  <li class="nav-item"><a href="https://github.com/Akash1420/ibm_training/tree/master/frontEnd/my-survey-app" class="nav-link text-uppercase font-weight-bold">| <i class="fa fa-github" aria-hidden="true"></i> GitHub </a></li>
+                  <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">| <i class="fa fa-address-book" aria-hidden="true"></i> Contact </a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+<div id="btns">
+
+
+<button class="btn btn-dark btn-circle btn-xl" routerLink="/view">View Surveys <i class="fa fa-search" aria-hidden="true"></i></button>
+<button class="btn btn-dark btn-circle btn-xl" routerLink="/addSurvey">Add Survey <i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+<button class="btn btn-dark btn-circle btn-xl" routerLink="/result"><i class="fa fa-gear fa-spin"></i> Insights <i class="fa fa-line-chart" aria-hidden="true"></i></button>
+</div>
+
+
+<router-outlet></router-outlet>
+
+
+
