@@ -1,0 +1,38 @@
+
+    <h2 class="display-4">Results!</h2>
+    
+    
+    <!-- <li class="list-group-item" *ngFor="let choice of choices1"><p>{{choice.choice_text}} - {{choice.count}}</p></li> -->
+
+    
+    
+    <div *ngFor="let survey of surveys" class="data">
+      <h3>{{survey.name}}</h3>
+    <table class="table table-striped" >
+      
+      <thead>
+        <tr>
+          
+          <th scope="col">Choice</th>
+          <th scope="col">Count</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let choice of survey.choices">
+          <td>{{choice.choice_text}}</td>
+          <td>{{choice.count}}</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    </div>
+    
+    
+    
+    
+    <canvas id="myChart" width="1550px" height="400"></canvas>
+    <canvas id="myChart1" width="1550px" height="400"></canvas>
+   
+  
