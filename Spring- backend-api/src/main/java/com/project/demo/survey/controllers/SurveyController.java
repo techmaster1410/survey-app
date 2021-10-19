@@ -44,17 +44,25 @@ public class SurveyController {
 		return surveyService.findSurveyByName(name);
 	}
 	
-//	@PutMapping("/choice")
-//	public ResponseEntity<Void> updateChoice(@RequestBody Choice choice){
-//		
-//		surveyService.updateChoice(choice);
-//		ResponseEntity<Void> re = new ResponseEntity<>(HttpStatus.ACCEPTED);
-//		return re;
-//	}
+	@PutMapping("/choice")
+	public ResponseEntity<Void> updateChoice(@RequestBody Choice choice){
+		
+		surveyService.updateChoice(choice);
+		ResponseEntity<Void> re = new ResponseEntity<>(HttpStatus.ACCEPTED);
+		return re;
+	}
 	
 	@PostMapping("/survey")
 	public ResponseEntity<Void> addQuiz(@RequestBody Survey survey) {
 		surveyService.addSurvey(survey);
+		ResponseEntity<Void> re = new ResponseEntity<Void>(HttpStatus.CREATED);
+		return re;
+
+	}
+  
+  @PostMapping("/survey")
+	public ResponseEntity<Void> addQuizAlternate(@RequestBody Survey survey) {
+		surveyService.addSurveyAlternate(survey);
 		ResponseEntity<Void> re = new ResponseEntity<Void>(HttpStatus.CREATED);
 		return re;
 
