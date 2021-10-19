@@ -71,11 +71,16 @@ public class SurveyService {
 	}
 }
 
+public Survey checkSurveyStatus(int stCode){
+  if(stCode == 1){
+    System.out.println(surveys);
+    return NULL;
+  }
+  else{
+    System.out.println("Not Required!");
+  }
 
 
-
-
-/*
 
 @Autowired
 ChoiceRepository choiceRepository;
@@ -93,4 +98,3 @@ Choice choice = choiceRepository.findById(updatedChoice.getId());
 choice.setCount(updatedChoice.getCount());
 choice.setChoice_text(updatedChoice.getChoice_text());
 }
-*/
