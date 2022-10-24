@@ -58,6 +58,11 @@ public class SurveyService {
 		return surveyRepository.save(quiz);
 		
 	}
+  
+  boolean isActiveDB = true;
+  public void isDBOnline(questionRepository.getActiveStack()){
+    LOG.info("Checking DB status before selecting route");
+  }
 	
 
 	public List<Survey> findAllSurveys() {
